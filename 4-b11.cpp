@@ -1,22 +1,23 @@
-/*2353126 ÐÅ03 ´ÞÂ¶ÎÄ*/
+tipsï¼šæœ‰bugï¼Œè¾“å…¥Aç»“æžœä¸å¯¹
+/*2353126 ä¿¡03 å´”éœ²æ–‡*/
 #include <iostream>
 #include <iomanip>
 #include <cstdio>
 using namespace std;
 
 /* -----------------------------------------------------------------------------------
-		ÔÊÐí   £º1¡¢°´ÐèÔö¼ÓÒ»¸ö»ò¶à¸öº¯Êý£¨°üÀ¨µÝ¹éº¯Êý£©£¬µ«ÊÇËùÓÐÔö¼ÓµÄº¯ÊýÖÐ²»ÔÊÐíÈÎºÎÐÎÊ½µÄÑ­»·
-				 2¡¢¶¨Òå·ûºÅ³£Á¿
-				 3¡¢¶¨ÒåconstÐÍ±äÁ¿
+		å…è®¸   ï¼š1ã€æŒ‰éœ€å¢žåŠ ä¸€ä¸ªæˆ–å¤šä¸ªå‡½æ•°ï¼ˆåŒ…æ‹¬é€’å½’å‡½æ•°ï¼‰ï¼Œä½†æ˜¯æ‰€æœ‰å¢žåŠ çš„å‡½æ•°ä¸­ä¸å…è®¸ä»»ä½•å½¢å¼çš„å¾ªçŽ¯
+				 2ã€å®šä¹‰ç¬¦å·å¸¸é‡
+				 3ã€å®šä¹‰conståž‹å˜é‡
 
-		²»ÔÊÐí £º1¡¢¶¨ÒåÈ«¾Ö±äÁ¿
-				 2¡¢³ýprint_towerÖ®ÍâµÄÆäËûº¯ÊýÖÐ²»ÔÊÐí¶¨Òå¾²Ì¬¾Ö²¿±äÁ¿
+		ä¸å…è®¸ ï¼š1ã€å®šä¹‰å…¨å±€å˜é‡
+				 2ã€é™¤print_towerä¹‹å¤–çš„å…¶ä»–å‡½æ•°ä¸­ä¸å…è®¸å®šä¹‰é™æ€å±€éƒ¨å˜é‡
    ----------------------------------------------------------------------------------- */
 
    /***************************************************************************
-		º¯ÊýÃû³Æ£ºprint_left
-		¹¦    ÄÜ£º´òÓ¡×î´ó×Ö·ûµ½Ð¡×Ö·û
-		Ëµ    Ã÷£ºÀýÈçprint_left('D','A'),Êä³öDCBA
+		å‡½æ•°åç§°ï¼šprint_left
+		åŠŸ    èƒ½ï¼šæ‰“å°æœ€å¤§å­—ç¬¦åˆ°å°å­—ç¬¦
+		è¯´    æ˜Žï¼šä¾‹å¦‚print_left('D','A'),è¾“å‡ºDCBA
 	  ***************************************************************************/
 void print_left(char start_ch, char end_ch)
 {
@@ -30,9 +31,9 @@ void print_left(char start_ch, char end_ch)
 }
 
 /***************************************************************************
-		º¯ÊýÃû³Æ£ºprint_right
-		¹¦    ÄÜ£º´òÓ¡Ð¡×Ö·ûµ½´ó×Ö·û
-		Ëµ    Ã÷£ºÀýprint_right('B','D')£¬Êä³öBCD
+		å‡½æ•°åç§°ï¼šprint_right
+		åŠŸ    èƒ½ï¼šæ‰“å°å°å­—ç¬¦åˆ°å¤§å­—ç¬¦
+		è¯´    æ˜Žï¼šä¾‹print_right('B','D')ï¼Œè¾“å‡ºBCD
 	  ***************************************************************************/
 void print_right(char start_ch, char end_ch)
 {
@@ -47,19 +48,19 @@ void print_right(char start_ch, char end_ch)
 
 
    /***************************************************************************
-	 º¯ÊýÃû³Æ£ºprint_tower
-	 ¹¦    ÄÜ£º´òÓ¡×ÖÄ¸Ëþ
-	 ÊäÈë²ÎÊý£º
-	 ·µ »Ø Öµ£º
-	 Ëµ    Ã÷£ºÐÎ²Î°´ÐèÉèÖÃ
-			   ÌáÊ¾£ºÓÐÒ»¸ö²ÎÊýorder£¬Ö¸¶¨ÕýÐò/µ¹Ðò
-			   orderÎª1£ºÕýÈý½Ç£»orderÎª-1£ºµ¹Èý½Ç
+	 å‡½æ•°åç§°ï¼šprint_tower
+	 åŠŸ    èƒ½ï¼šæ‰“å°å­—æ¯å¡”
+	 è¾“å…¥å‚æ•°ï¼š
+	 è¿” å›ž å€¼ï¼š
+	 è¯´    æ˜Žï¼šå½¢å‚æŒ‰éœ€è®¾ç½®
+			   æç¤ºï¼šæœ‰ä¸€ä¸ªå‚æ•°orderï¼ŒæŒ‡å®šæ­£åº/å€’åº
+			   orderä¸º1ï¼šæ­£ä¸‰è§’ï¼›orderä¸º-1ï¼šå€’ä¸‰è§’
 
-			   depthÊÇÒòÎªµ¹Èý½ÇÊµÔÚÏë²»³öÔõÃ´´òÓ¡¿Õ¸ñ²Å¼ÓµÄQAQ
+			   depthæ˜¯å› ä¸ºå€’ä¸‰è§’å®žåœ¨æƒ³ä¸å‡ºæ€Žä¹ˆæ‰“å°ç©ºæ ¼æ‰åŠ çš„QAQ
    ***************************************************************************/
 void print_tower(char start_ch, char end_ch, int order, int depth = 0)
 {
-	/* °´ÐèÊµÏÖ£¬º¯ÊýÖÐ²»ÔÊÐíÈÎºÎÐÎÊ½µÄÑ­»·£¬²»ÔÊÐí¶¨Òå¾²Ì¬¾Ö²¿±äÁ¿ */
+	/* æŒ‰éœ€å®žçŽ°ï¼Œå‡½æ•°ä¸­ä¸å…è®¸ä»»ä½•å½¢å¼çš„å¾ªçŽ¯ï¼Œä¸å…è®¸å®šä¹‰é™æ€å±€éƒ¨å˜é‡ */
 	if (order == 1)
 	{
 		cout << setw((end_ch - start_ch) + 1) << setfill(' ') << start_ch;
@@ -107,45 +108,45 @@ void print_tower(char start_ch, char end_ch, int order, int depth = 0)
 
 
 /***************************************************************************
-  º¯ÊýÃû³Æ£ºmain
-  ¹¦    ÄÜ£º
-  ÊäÈë²ÎÊý£º
-  ·µ »Ø Öµ£º
-  Ëµ    Ã÷£ºmainº¯ÊýÖÐµÄ...ÔÊÐíÐÞ¸Ä£¬ÆäÓàÎ»ÖÃ²»×¼ÐÞ¸Ä
+  å‡½æ•°åç§°ï¼šmain
+  åŠŸ    èƒ½ï¼š
+  è¾“å…¥å‚æ•°ï¼š
+  è¿” å›ž å€¼ï¼š
+  è¯´    æ˜Žï¼šmainå‡½æ•°ä¸­çš„...å…è®¸ä¿®æ”¹ï¼Œå…¶ä½™ä½ç½®ä¸å‡†ä¿®æ”¹
 ***************************************************************************/
 int main()
 {
 	char end_ch;
 
-	/* ¼üÅÌÊäÈë½áÊø×Ö·û(½ö´óÐ´ÓÐÐ§£¬Îª±ÜÃâÑ­»·³öÏÖ£¬²»´¦ÀíÊäÈë´íÎó) */
-	cout << "ÇëÊäÈë½áÊø×Ö·û(A~Z)" << endl;
-	end_ch = getchar();			//¶Á»º³åÇøµÚÒ»¸ö×Ö·û
+	/* é”®ç›˜è¾“å…¥ç»“æŸå­—ç¬¦(ä»…å¤§å†™æœ‰æ•ˆï¼Œä¸ºé¿å…å¾ªçŽ¯å‡ºçŽ°ï¼Œä¸å¤„ç†è¾“å…¥é”™è¯¯) */
+	cout << "è¯·è¾“å…¥ç»“æŸå­—ç¬¦(A~Z)" << endl;
+	end_ch = getchar();			//è¯»ç¼“å†²åŒºç¬¬ä¸€ä¸ªå­—ç¬¦
 	if (end_ch < 'A' || end_ch > 'Z') {
-		cout << "½áÊø×Ö·û²»ÊÇ´óÐ´×ÖÄ¸" << endl;
+		cout << "ç»“æŸå­—ç¬¦ä¸æ˜¯å¤§å†™å­—æ¯" << endl;
 		return -1;
 	}
 
-	/* ÕýÈý½Ç×ÖÄ¸Ëþ(ÖÐ¼äÎªA) */
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö=(²»ÔÊÐíÓÃÑ­»·) */
-	cout << "ÕýÈý½Ç×ÖÄ¸Ëþ(" << end_ch << "->A)" << endl;
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö=(²»ÔÊÐíÓÃÑ­»·) */
-	print_tower('A', end_ch, 1, 0); //ÕýÐò´òÓ¡ A~½áÊø×Ö·û 
+	/* æ­£ä¸‰è§’å­—æ¯å¡”(ä¸­é—´ä¸ºA) */
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º=(ä¸å…è®¸ç”¨å¾ªçŽ¯) */
+	cout << "æ­£ä¸‰è§’å­—æ¯å¡”(" << end_ch << "->A)" << endl;
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º=(ä¸å…è®¸ç”¨å¾ªçŽ¯) */
+	print_tower('A', end_ch, 1, 0); //æ­£åºæ‰“å° A~ç»“æŸå­—ç¬¦ 
 	cout << endl;
 
-	/* µ¹Èý½Ç×ÖÄ¸Ëþ(ÖÐ¼äÎªA) */
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö=(²»ÔÊÐíÓÃÑ­»·) */
-	cout << "µ¹Èý½Ç×ÖÄ¸Ëþ(" << end_ch << "->A)" << endl;
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö=(²»ÔÊÐíÓÃÑ­»·) */
-	print_tower(end_ch, 'A', -1, 0); //ÄæÐò´òÓ¡ A~½áÊø×Ö·û 
+	/* å€’ä¸‰è§’å­—æ¯å¡”(ä¸­é—´ä¸ºA) */
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º=(ä¸å…è®¸ç”¨å¾ªçŽ¯) */
+	cout << "å€’ä¸‰è§’å­—æ¯å¡”(" << end_ch << "->A)" << endl;
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl; /* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º=(ä¸å…è®¸ç”¨å¾ªçŽ¯) */
+	print_tower(end_ch, 'A', -1, 0); //é€†åºæ‰“å° A~ç»“æŸå­—ç¬¦ 
 	cout << endl;
 
-	/* ºÏÆðÀ´¾ÍÊÇÆ¯ÁÁµÄÁâÐÎ£¨ÖÐ¼äÎªA£© */
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl;/* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö= */
-	cout << "ÁâÐÎ(" << end_ch << "->A)" << endl;
-	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl;/* °´×ÖÄ¸Ëþ×î´ó¿í¶ÈÊä³ö= */
-	print_tower('A', end_ch, 1, 0);   //´òÓ¡ A~½áÊø×Ö·ûµÄÕýÈý½Ç 
-	print_tower(end_ch-1, 'A', -1, 1);   //´òÓ¡ A~½áÊø×Ö·û-1µÄµ¹Èý½Ç
-	//×¢ÒâÕâÀïdepthÊÇ1£¬·ñÔòµ¹Èý½ÇÃ¿Ò»ÐÐÇ°ÉÙÒ»¸ö¿Õ¸ñ
+	/* åˆèµ·æ¥å°±æ˜¯æ¼‚äº®çš„è±å½¢ï¼ˆä¸­é—´ä¸ºAï¼‰ */
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl;/* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º= */
+	cout << "è±å½¢(" << end_ch << "->A)" << endl;
+	cout << setw((end_ch - 'A') * 2 + 1) << setfill('=') << '=' << endl;/* æŒ‰å­—æ¯å¡”æœ€å¤§å®½åº¦è¾“å‡º= */
+	print_tower('A', end_ch, 1, 0);   //æ‰“å° A~ç»“æŸå­—ç¬¦çš„æ­£ä¸‰è§’ 
+	print_tower(end_ch-1, 'A', -1, 1);   //æ‰“å° A~ç»“æŸå­—ç¬¦-1çš„å€’ä¸‰è§’
+	//æ³¨æ„è¿™é‡Œdepthæ˜¯1ï¼Œå¦åˆ™å€’ä¸‰è§’æ¯ä¸€è¡Œå‰å°‘ä¸€ä¸ªç©ºæ ¼
 
 	cout << endl;
 
